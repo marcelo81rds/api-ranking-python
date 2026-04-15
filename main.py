@@ -22,3 +22,8 @@ def ranking():
         {"id": j[0], "nome": j[1], "pontuacao": j[2]}
         for j in dados
     ]
+
+
+@app.get("/")
+def home():
+    return {"mensagem": "API online 🚀"}
